@@ -1,2 +1,10 @@
 <!--pages/me/functions/version/version.wxml-->
-<text>pages/me/functions/version/version.wxml</text>
+<view class='container'>
+  <view class='logo'>
+    <image src='/images/avatar.jpg'></image>
+  </view>
+  <view class='name'>老肥俊锋</view>
+  <view class='version'>Version 1.0.0 bate1 build 20181029</view>
+</view>
+
+<footer />

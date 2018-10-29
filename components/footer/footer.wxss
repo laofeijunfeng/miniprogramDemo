@@ -1,0 +1,13 @@
+/* components/footer/footer.wxss */
+.footer {
+  position: fixed;
+  bottom: 0;
+}
+.footer view {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 80%;
+  margin: 20rpx 0;
+}

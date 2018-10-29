@@ -1,0 +1,4 @@
+<!--components/footer/footer.wxml-->
+<view class='footer'>
+  <view>Copyright @2018 Junfeng Lin All Rights Reserved.</view>
+</view>

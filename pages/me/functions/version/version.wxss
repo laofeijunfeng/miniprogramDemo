@@ -1,1 +1,20 @@
 /* pages/me/functions/version/version.wxss */
+.container {
+  margin-top: 150rpx;
+}
+.container .logo, .container .name, .container .version {
+  display: flex;
+  justify-content: space-around;
+}
+.container image {
+  height: 175rpx;
+  width: 175rpx;
+  border-radius: 10rpx;
+  box-shadow: 2rpx 2rpx 5rpx grey;
+}
+.container .name, .container .version {
+  font-size: 80%;
+}
+.container .name {
+  margin: 40rpx 0 20rpx 0;
+}
