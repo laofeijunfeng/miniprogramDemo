@@ -1,0 +1,15 @@
+<!--pages/me/functions/wechat/wechat.wxml-->
+<view class='container'>
+  <view class='qrcode'>
+    <image src='/images/me/qrcode.png' mode='aspectFill' bindtap='previewQrcode'></image>
+  </view>
+  <view class='account'>ljf531218650</view>
+  <view class='copyaccount'>
+    <view class='btn' bindtap='copyAccount' data-account='ljf531218650'>复制微信号</view>
+  </view>
+  <view class='desc'>
+    <view>点击预览保存二维码或复制微信号</view>
+    <view>添加个人微信</view>
+    <view>我们就可以愉快的聊天啦！</view>
+  </view>
+</view>

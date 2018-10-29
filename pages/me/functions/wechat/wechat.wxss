@@ -1,0 +1,41 @@
+/* pages/me/functions/wechat/wechat.wxss */
+page {
+  background-color: #f8f8f8;
+}
+
+.container {
+  margin: 40rpx;
+  background-color: #ffffff;
+  padding: 80rpx 0;
+  border-radius: 10rpx;
+}
+.container image {
+  height: 175rpx;
+  width: 175rpx;
+  border: 1rpx solid #bfbfbf;
+  border-radius: 10rpx;
+  padding: 40rpx;
+}
+.qrcode, .account, .copyaccount, .desc view {
+  display: flex;
+  justify-content: space-around;
+}
+.account {
+  font-size: 90%;
+  margin: 40rpx 0 10rpx 0;
+}
+.copyaccount .btn {
+  padding: 5rpx 20rpx;
+  background-color: #f8f8f8;
+  font-size: 80%;
+  border-radius: 10rpx;
+  border: 1rpx solid #bfbfbf;
+}
+.desc {
+  margin-top: 40rpx;
+  font-size: 80%;
+}
+.desc view {
+  margin: 10rpx 0;
+  color: grey;
+}

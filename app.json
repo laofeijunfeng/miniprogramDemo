@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/demo/index/index",
+    "pages/me/index/index",
+    "pages/me/functions/log/log",
+    "pages/me/functions/feedback/feedback",
+    "pages/me/functions/wechat/wechat",
+    "pages/me/functions/works/works",
+    "pages/demo/demos/slidingswitch/slidingswitch",
+    "pages/me/functions/version/version"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#2c2c2c",
+    "list": [
+      {
+        "pagePath": "pages/demo/index/index",
+        "text": "Demo",
+        "iconPath": "images/tarbar/demo.png",
+        "selectedIconPath": "images/tarbar/demo_select.png"
+      },
+      {
+        "pagePath": "pages/me/index/index",
+        "text": "Me",
+        "iconPath": "images/tarbar/me.png",
+        "selectedIconPath": "images/tarbar/me_select.png"
+      }
+    ]
+  }
+}

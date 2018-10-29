@@ -1,0 +1,39 @@
+/* pages/demo/index/index.wxss */
+page {
+  background-color: #f8f8f8;
+}
+
+.desc .icon {
+  display: flex;
+  justify-content: space-around;
+}
+.desc image {
+  height: 75rpx;
+  width: 75rpx;
+}
+.desc .content {
+  margin: 40rpx 0;
+  font-size: 80%;
+  color: grey;
+}
+.desc .content view {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav {
+  padding: 40rpx 0;
+}
+.nav .item {
+  margin: 20rpx;
+  padding: 25rpx;
+  border-radius: 10rpx;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav image {
+  height: 75rpx;
+  width: 75rpx;
+}

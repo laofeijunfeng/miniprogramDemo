@@ -1,0 +1,17 @@
+<!--pages/me/index/index.wxml-->
+<view class='containe'>
+  <view class='avatar'>
+    <image src='/images/avatar.jpg' mode='aspectFill'></image>
+  </view>
+  <view class='name'>老肥俊锋</view>
+  <view class='address'>广东 | 揭阳</view>
+</view>
+
+<view class='functions'>
+  <block wx:for="{{functions}}" wx:key="{{index}}">
+    <view class='item' data-url="{{item.url}}" bindtap='gotopage'>
+      <text>{{item.title}}</text>
+      <image src="{{item.icon}}" mode='aspectFill'></image>
+    </view>
+  </block>
+</view>
