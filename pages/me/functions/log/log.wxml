@@ -1,2 +1,11 @@
 <!--pages/me/functions/log/log.wxml-->
-<text>pages/me/functions/log/log.wxml</text>
+<view class='container'>
+  <block wx:for="{{feedback}}" wx:key="{{index}}">
+    <view class='item'>
+      <view class='time'>{{item.tmCreate}}</view>
+      <view class='content'>
+        <text>{{item.content}}</text>
+      </view>
+    </view>
+  </block>
+</view>

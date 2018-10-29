@@ -1,1 +1,11 @@
 /* pages/me/functions/log/log.wxss */
+.container {
+  margin: 20rpx;
+}
+.container .item {
+  margin-bottom: 40rpx;
+}
+.container .item .content {
+  margin: 10rpx 0 5rpx 40rpx;
+  font-size: 80%;
+}
