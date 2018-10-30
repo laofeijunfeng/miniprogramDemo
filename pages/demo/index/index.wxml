@@ -12,9 +12,9 @@
 
 <view class='nav'>
   <block wx:for="{{demos}}" wx:key="{{index}}">
-    <view class='item' data-url="{{item.url}}" bindtap='gotopage'>
+    <view class='item' data-url="{{item.url}}" data-title="{{item.title}}" bindtap='gotopage'>
       <text>{{item.title}}</text>
-      <image src="{{item.icon}}" mode='aspectFill'></image>
+      <image src="{{item.icon}}" mode='width'></image>
     </view>
   </block>
 </view>

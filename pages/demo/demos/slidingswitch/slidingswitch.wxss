@@ -12,13 +12,13 @@ page {
   position: fixed;
   top: 0;
   z-index: 9999;
+  border-bottom: 1rpx solid #f8f8f8;
 }
 .tabItem {
   display: inline-block;
   width: 50vw;
 }
 .tabItem view {
-  width: 50vw;
   height: 8vh;
   display: flex;
   justify-content: space-around;

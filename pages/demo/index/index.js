@@ -7,9 +7,14 @@ Page({
   data: {
     demos: [
       {
-        title: '滑动切换',
+        title: '滑动切页',
         icon: '/images/demo/windows.png',
         url: '/pages/demo/demos/slidingswitch/slidingswitch'
+      },
+      {
+        title: '弹幕',
+        icon: '/images/demo/barrage.png',
+        url: '/pages/demo/demos/barrage/barrage'
       }
     ]
   },
@@ -74,9 +79,8 @@ Page({
    * 自定义方法
    */
   gotopage: function (e) {
-    var url = e.currentTarget.dataset.url
     wx.navigateTo({
-      url: url
+      url: e.currentTarget.dataset.url + '?title=' + e.currentTarget.dataset.title
     })
   },
 

@@ -7,7 +7,8 @@
     "pages/me/functions/wechat/wechat",
     "pages/me/functions/works/works",
     "pages/demo/demos/slidingswitch/slidingswitch",
-    "pages/me/functions/version/version"
+    "pages/me/functions/version/version",
+    "pages/demo/demos/barrage/barrage"
   ],
   "window": {
     "backgroundTextStyle": "light",

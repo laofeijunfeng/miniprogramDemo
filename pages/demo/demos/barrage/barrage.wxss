@@ -1,0 +1,14 @@
+/* pages/demo/demos/barrage/barrage.wxss */
+.container {
+  height: 80%;
+  width: 100%;
+  position: absolute;
+}
+.container .item {
+  position: absolute;
+  white-space: nowrap;
+}
+@keyframes first{
+  from {left: 100%;}
+  to {left: -100%;}
+}
