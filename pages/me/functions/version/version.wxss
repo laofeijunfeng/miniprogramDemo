@@ -10,7 +10,7 @@
   height: 175rpx;
   width: 175rpx;
   border-radius: 10rpx;
-  box-shadow: 2rpx 2rpx 5rpx grey;
+  box-shadow: 2rpx 2rpx 5rpx #bfbfbf;
 }
 .container .name, .container .version {
   font-size: 80%;

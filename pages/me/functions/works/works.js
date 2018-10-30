@@ -5,7 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    works: [
+      {
+        title: '零氪斯企业官网',
+        image: 'http://p98bo6q4s.bkt.clouddn.com/FuX0IijCOtoqQ9C35Bbs5ryEIB_N',
+        qrcode: 'http://p98bo6q4s.bkt.clouddn.com/FjUz7b9YeukGlH69ShVw5s81lTw0'
+      }
+    ],
+    currentItemId: 0
   },
 
   /**
@@ -62,5 +69,30 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  /**
+   * 自定义方法
+   */
+  swiperChange: function (e) {
+    var currentItemId = e.detail.currentItemId;
+    this.setData({
+      currentItemId: currentItemId
+    })
+  },
+
+  clickChange: function (e) {
+    var itemId = e.currentTarget.dataset.itemId;
+    this.setData({
+      currentItemId: itemId
+    })
+  },
+
+  viewQrcode: function () {
+    var works = this.data.works
+    var currentItemId = this.data.currentItemId
+    wx.previewImage({
+      urls: [works[currentItemId].qrcode]
+    })
   }
 })

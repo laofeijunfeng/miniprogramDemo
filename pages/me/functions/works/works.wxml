@@ -1,2 +1,12 @@
 <!--pages/me/functions/works/works.wxml-->
-<text>pages/me/functions/works/works.wxml</text>
+<swiper class="swiper" next-margin="140rpx" current-item-id="{{currentItemId}}" previous-margin="140rpx" bindchange="swiperChange">
+  <block wx:for="{{works}}" wx:key="{{index}}">
+    <swiper-item item-id="{{index}}" data-item-id="{{index}}" bindtap='clickChange'>
+      <view class='item'>
+        <image src="{{item.image}}" style="{{currentItemId == index ? 'transform: scale(1);' : 'transform: scale(0.8);'}}" mode='widthFix'></image>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='bottombtn' bindtap='viewQrcode'>查看二维码</view>
