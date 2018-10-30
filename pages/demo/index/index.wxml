@@ -3,7 +3,7 @@
   <view class='icon'>
     <image src='/images/demo/function.png' mode='aspectFill'></image>
   </view>
-  <view class='content'>
+  <view class='content' bindtap='copyGithub'>
     <view>以下是实例展示，组件仅供参。</view>
     <view>具体源码已经上传 github 平台。</view>
     <view>可点击此段说明复制源码地址。</view>

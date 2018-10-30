@@ -1,2 +1,18 @@
 <!--pages/demo/demos/slidingswitch/slidingswitch.wxml-->
-<text>pages/demo/demos/slidingswitch/slidingswitch.wxml</text>
+<scroll-view scroll-x="true" class="tabH" scroll-left="{{scrollLeft}}">
+  <block wx:for="{{tabs}}" wx:key="{{index}}">
+    <view class="tabItem {{currentTab == index ? 'active' : ''}}" data-current="{{index}}" bindtap="swichNav">
+      <view>{{item.title}}</view>
+    </view>
+  </block>
+</scroll-view>
+
+<swiper class='tabContent' current="{{currentTab}}" duration="300" bindchange="switchTab">
+  <swiper-item wx:for="{{tabs}}" wx:key="{{index}}">
+    <scroll-view scroll-y="true" class="scollH">
+      <block wx:for="{{item.content}}" wx:key="id" wx:for-item='contentItem'>
+        <view class='content'>{{contentItem.name}}</view>
+      </block>
+    </scroll-view>
+  </swiper-item>
+</swiper>

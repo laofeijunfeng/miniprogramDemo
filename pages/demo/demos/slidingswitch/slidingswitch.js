@@ -5,7 +5,49 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    currentTab: 0,
+    tabs: [
+      {
+        title: 'tab_0',
+        content: [
+          {
+            name: 'tabContent_0_0'
+          },
+          {
+            name: 'tabContent_0_1'
+          },
+          {
+            name: 'tabContent_0_2'
+          },
+          {
+            name: 'tabContent_0_3'
+          },
+        ]
+      },
+      {
+        title: 'tab_1',
+        content: [
+          {
+            name: 'tabContent_1_0'
+          },
+          {
+            name: 'tabContent_1_1'
+          },
+          {
+            name: 'tabContent_1_2'
+          },
+          {
+            name: 'tabContent_1_3'
+          },
+          {
+            name: 'tabContent_1_4'
+          },
+          {
+            name: 'tabContent_1_5'
+          }
+        ]
+      }
+    ]
   },
 
   /**
@@ -62,5 +104,22 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  /**
+   * 自定义方法
+   */
+  swichNav: function (e) {
+    var current = e.currentTarget.dataset.current;
+    if (this.data.currentTaB != current) {
+      this.setData({
+        currentTab: current
+      })
+    }
+  },
+  switchTab: function (e) {
+    this.setData({
+      currentTab: e.detail.current
+    })
   }
 })

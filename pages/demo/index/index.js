@@ -78,5 +78,17 @@ Page({
     wx.navigateTo({
       url: url
     })
+  },
+
+  copyGithub: function () {
+    wx.setClipboardData({
+      data: 'https://github.com/laofeijunfeng/miniprogramDemo',
+      success: function () {
+        wx.showToast({
+          title: '复制成功',
+          icon: 'none'
+        })
+      }
+    })
   }
 })
