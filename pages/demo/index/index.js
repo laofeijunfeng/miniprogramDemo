@@ -15,6 +15,11 @@ Page({
         title: '弹幕',
         icon: '/images/demo/barrage.png',
         url: '/pages/demo/demos/barrage/barrage'
+      },
+      {
+        title: '生成海报',
+        icon: '/images/demo/poster.png',
+        url: '/pages/demo/demos/generateposter/generateposter'
       }
     ]
   },

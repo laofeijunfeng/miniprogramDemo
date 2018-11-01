@@ -1,0 +1,13 @@
+<!--pages/demo/demos/generateposter/generateposter.wxml-->
+<view class='poster'>
+  <block wx:if="{{imagePath.length > 0}}">
+    <image src="{{imagePath}}" ></image>
+  </block>  
+</view>
+
+<canvas style="width: 100vw; height: 100vh; position:fixed;" hidden canvas-id="mycanvas"/>
+
+<view class='bottombtn' bindtap='generatePoster'>
+  <block wx:if="{{imagePath.length <= 0}}">生成海报</block>
+  <block wx:else>保存图片</block>
+</view>
