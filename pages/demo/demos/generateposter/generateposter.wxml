@@ -5,7 +5,7 @@
   </block>  
 </view>
 
-<canvas style="width: 100vw; height: 100vh; position:fixed;" hidden canvas-id="mycanvas"/>
+<canvas style="width: 100vw; height: 100vh;" hidden canvas-id="mycanvas"/>
 
 <view class='bottombtn' bindtap='generatePoster'>
   <block wx:if="{{imagePath.length <= 0}}">生成海报</block>

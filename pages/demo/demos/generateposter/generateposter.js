@@ -90,6 +90,19 @@ Page({
     context.fillText(address, 150, 100)
     context.stroke()
 
+    var userInfo = [
+      '职业：web 开发程序员',
+      '工作地址：广东深圳',
+      '邮箱：laofeijunfeng@163.com'
+    ]
+    for (var index in userInfo) {
+      context.setFontSize(15)
+      context.setFillStyle('#2c2c2c')
+      context.setTextAlign('left')
+      context.fillText(userInfo[index], 75, 200 + index * 30)
+      context.stroke()
+    }
+
     var qrcode = '/images/qrcode.jpg'
     context.drawImage(qrcode, 270, 490, 80, 80);
 
