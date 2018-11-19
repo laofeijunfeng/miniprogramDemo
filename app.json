@@ -9,7 +9,8 @@
     "pages/demo/demos/slidingswitch/slidingswitch",
     "pages/me/functions/version/version",
     "pages/demo/demos/barrage/barrage",
-    "pages/demo/demos/generateposter/generateposter"
+    "pages/demo/demos/generateposter/generateposter",
+    "pages/demo/demos/address/address"
   ],
   "window": {
     "backgroundTextStyle": "light",

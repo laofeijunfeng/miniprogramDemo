@@ -1,0 +1,41 @@
+/* pages/demo/demos/address/address.wxss */
+
+.address {
+  margin: 20rpx;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  background-color: #2c2c2c;
+}
+.desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.desc text {
+  color: #bfbfbf;
+  font-size: 80%;
+}
+.desc image {
+  height: 25rpx;
+  width: 25rpx;
+}
+.userinfo {
+  display: flex;
+  justify-content: space-between;
+  margin: 10rpx 0;
+}
+.userinfo text {
+  color: white;
+}
+.userinfo .telnumber {
+  font-size: 80%;
+}
+.detail {
+  color: white;
+  font-size: 90%;
+}
+
+.hr {
+  border-bottom: 1rpx solid #bfbfbf;
+  margin: 20rpx 0;
+}

@@ -20,6 +20,11 @@ Page({
         title: '生成海报',
         icon: '/images/demo/poster.png',
         url: '/pages/demo/demos/generateposter/generateposter'
+      },
+      {
+        title: '收货地址',
+        icon: '/images/demo/address.png',
+        url: '/pages/demo/demos/address/address'
       }
     ]
   },

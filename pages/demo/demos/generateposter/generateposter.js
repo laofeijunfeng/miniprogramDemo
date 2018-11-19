@@ -133,5 +133,43 @@ Page({
         console.log(res);
       }
     })
+  },
+
+  saveImage: function() {
+    wx.canvasToTempFilePath({
+      canvasId: 'mycanvas',
+      fileType: 'jpg',
+      success: function(res) {
+        wx.saveImageToPhotosAlbum({
+          filePath: res.tempFilePath,
+          success: function(res) {
+            wx.showToast({
+              title: '保存成功'
+            })
+          },
+          fail: function(res) {
+            if (res.errMsg === "saveImageToPhotosAlbum:fail auth deny") {
+              wx.openSetting({
+                success: function(res) {
+                  if (res.authSetting["scope.writePhotosAlbum"]) {
+                    console.log("获取权限成功，再次点击图片保存到相册")
+                    wx.showToast({
+                      title: '获取权限成功',
+                      icon: 'none'
+                    })
+                  } else {
+                    console.log("获取权限失败")
+                    wx.showToast({
+                      title: '获取权限失败',
+                      icon: 'none'
+                    })
+                  }
+                }
+              })
+            }
+          }
+        })
+      }
+    }, this)
   }
 })

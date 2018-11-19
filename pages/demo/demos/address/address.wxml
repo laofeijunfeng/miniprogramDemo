@@ -1,0 +1,15 @@
+<!--pages/demo/demos/address/address.wxml-->
+<view class='address' wx:if="{{address != null}}" bindtap='chooseAddress'>
+  <view class='desc'>
+    <text>配送地址</text>
+    <image src='/images/demo/more.png' mode='widthFix'></image>
+  </view>
+  <view class='hr'></view>
+  <view class='userinfo'>
+    <text class='username'>{{address.userName}}</text>
+    <text class='telnumber'>{{address.telNumber}}</text>
+  </view>
+  <view class='detail'>{{address.provinceName + address.cityName + address.countyName + address.detailInfo}}</view>
+</view>
+
+<view class='bottombtn' bindtap='chooseAddress'>获取收货地址</view>
